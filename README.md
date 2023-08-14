@@ -1,2 +1,1 @@
-# EEG Lab
- 
+**EEG Lab**
