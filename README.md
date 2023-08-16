@@ -22,6 +22,7 @@ $C*V_{i}=E_{i}*V_{i}\rightarrow$  E: eigenvalue and V: eigenvector.<br/>
 >**The Common Average Reference technique involves the following steps:**<br/>
 >  - *Calculating the Average Signal:* Calculate the average signal across all electrodes at each time point. This average represents the common noise present in the recording.
 >  - *Subtracting the Average Signal:* Subtract the calculated average signal from the individual electrode signals. This helps remove the common noise component.<br/>
+>
 >**Drawbacks:**
 >  - *Preserving Spatial Information:* While CAR reduces common noise, it can also remove some spatial information, which might be important for analyzing brain dynamics involving localized activity.
 >  - Reference Bias:* CAR can introduce a reference bias, where the subtraction of the average signal might also remove part of the true brain signal. This can be problematic in scenarios where accurate amplitude information is crucial.
