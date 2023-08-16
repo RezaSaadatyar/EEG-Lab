@@ -3,6 +3,7 @@
 
 **Principal Component Analysis (PCA):**<Br/>
 PCA aims to capture the most significant variations in the data by finding the linear combinations of the original EEG channels that *maximize variance*. The first principal component explains the most variance, the second explains the second most, and so on.<br/>
+
 *Application of PCA to EEG Signals:*<br/>
  - Dimensionality Reduction: PCA can help reduce the dimensionality of the data by selecting a subset of the principal components that retain most of the relevant information.
  - Noise Reduction: PCA can help filter out noise and unwanted artifacts in EEG signals by emphasizing the components that contain signal-related information while attenuating those related to noise.
