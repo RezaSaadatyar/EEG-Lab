@@ -22,4 +22,13 @@ Sort the eigenvalues in decreasing order. The eigenvectors corresponding to the 
 Project the centered data onto the selected principal components to obtain the reduced-dimensional representation. If *P* is a matrix of the selected principal components, the transformed data *Y* is given by: $Y=X_{centered}.P$
 
 **Common Average Reference (CAR):**<br\>
-CAR is a widely used technique in EEG signal processing to mitigate the effects of common noise across multiple electrode channels. It aims to improve the quality of EEG data by removing or reducing common sources of noise, such as the placement of electrodes, cable movement, or external electromagnetic interference or muscle activity.
+CAR is a widely used technique in EEG signal processing to mitigate the effects of common noise across multiple electrode channels. It aims to improve the quality of EEG data by removing or reducing common sources of noise, such as the placement of electrodes, cable movement, or external electromagnetic interference or muscle activity. CAR $\rightarrow$ *Improving the signal-to-noise ratio of the EEG data.*<br/>
+
+**The Common Average Reference technique involves the following steps:**<br/>
+ - *Calculating the Average Signal:* Calculate the average signal across all electrodes at each time point. This average represents the common noise present in the recording.
+ - *Subtracting the Average Signal:* Subtract the calculated average signal from the individual electrode signals. This helps remove the common noise component.
+
+**Drawbacks:**
+ - *Preserving Spatial Information:* While CAR reduces common noise, it can also remove some spatial information, which might be important for analyzing brain dynamics involving localized activity.
+ - Reference Bias:* CAR can introduce a reference bias, where the subtraction of the average signal might also remove part of the true brain signal. This can be problematic in scenarios where accurate amplitude information is crucial.
+ - *Electrode Artifacts:* CAR might not completely eliminate the effects of electrode artifacts or certain types of noise that are not truly common across all channels.
