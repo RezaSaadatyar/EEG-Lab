@@ -50,6 +50,7 @@ def plot_features(data, data_features, Fs=None, channels=None, first_point=0, la
     axs[0].set_yticks((80*np.arange(data.shape[1], 0, -1)))
     axs[1].set_yticks((80*np.arange(data_features.shape[1], 0, -1)))
     axs[0].set_yticklabels(data.columns[:num_chan])
+    axs[1].set_yticklabels(data.columns[:num_chan])
     axs[0].tick_params(axis='x', labelsize=8)
     axs[1].tick_params(axis='x', labelsize=8)
     axs[0].tick_params(axis='y', labelsize=8)
