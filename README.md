@@ -27,3 +27,27 @@ $C*V_{i}=E_{i}*V_{i}\rightarrow$  E: eigenvalue and V: eigenvector.<br/>
 >  - *Preserving Spatial Information:* While CAR reduces common noise, it can also remove some spatial information, which might be important for analyzing brain dynamics involving localized activity.
 >  - *Reference Bias:* CAR can introduce a reference bias, where the subtraction of the average signal might also remove part of the true brain signal. This can be problematic in scenarios where accurate amplitude information is crucial.
 >  - *Electrode Artifacts:* CAR might not completely eliminate the effects of electrode artifacts or certain types of noise that are not truly common across all channels.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Independent Component Analysis (ICA): ICA is another technique used for artifact removal and source separation. It can be more sophisticated than CAR in terms of extracting independent sources of noise and brain signals.
