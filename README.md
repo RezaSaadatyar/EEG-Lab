@@ -49,7 +49,7 @@ X(t): Observed EEG signals matrix with time points as rows and electrode channel
 A: Mixing matrix (mapping from sources to electrodes).<br/>
 S(t): Matrix of independent source signals.<br/>
 ICA solves for A and S(t) iteratively, typically using optimization algorithms such as FastICA. The key assumption is that the source signals are statistically independent from each other.<br/>
-ICA is versatile and can be applied to various EEG signal analysis tasks, such as event-related potential (ERP) analysis, source localization, and feature extraction.
+ICA is versatile and can be applied to various EEG signal analysis tasks, such as event-related potential (ERP) analysis, source localization, and feature extraction. The underlying assumption is that the sources are not Gaussian and are mutually independent. In cases where the sources exhibit Gaussian distribution or dependence, alternative methods such as Principal Component Analysis (PCA) or Non-negative Matrix Factorization (NMF) may be more suitable
 
 
 
