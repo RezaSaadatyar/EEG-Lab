@@ -31,7 +31,7 @@ CAR is a widely used technique in EEG signal processing to mitigate the effects 
  - **Electrode Artifacts:** CAR might not completely eliminate the effects of electrode artifacts or certain types of noise that are not truly common across all channels.
 
 ----
-**Laplacian Spatial Filtering Technique for EEG Signals:**<br/>
+**Small Laplacian Technique for EEG Signals:**<br/>
 It  is a spatial filtering technique used in EEG signal processing. It aims to enhance spatial resolution by highlighting local changes in EEG signal activity while attenuating more widespread activity. This technique can help improve the detection of localized brain events and reduce the effects of distant sources and common noise.
 
 
