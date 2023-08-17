@@ -11,7 +11,7 @@ def car_filter(data):
     data_car = np.zeros((data.shape))
     mean = np.mean(data, axis=1)                                                
     #  ---------------------------------- Subtracting the Average Signal -------------------------------------
-    for ind in range(data.shape[1]):                      
+    for ind in range(data.shape[1]):                     
         data_car[:, ind] = data.iloc[:, ind] - mean
     
     return pd.DataFrame(data_car)
