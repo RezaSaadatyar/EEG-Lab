@@ -38,7 +38,17 @@ $L_{i}=X_{i} - {1 \over | N_{i}|}\sum_{j\epsilon N_{i}}{X_{j}}$<br/>
 **Process:**<br/>
   - *Neighborhood Definition:* Determine the set of neighboring electrodes for each electrode. Typically, a set of adjacent electrodes is chosen.
   - *Calculation:* For each electrode, calculate the Small Laplacian by subtracting the average of neighboring electrodes' signals from the signal of interest.
+----
 
+
+
+
+**Independent Component Analysis (ICA)**<br/> In EEG signal processing, ICA is applied to disentangle mixed sources, such as muscle activity and eye movements, from the underlying neural signals recorded in EEG data. In fact, ICA decompose these mixed signals into their underlying, statistically independent components, enabling researchers to better understand the distinct sources contributing to the recorded data.<br/>
+Given the observed EEG signals X(t) as a matrix with time points as rows and electrode channels as columns, ICA seeks to factorize it into two matrices: X(t)=A⋅S(t), where:<br/>
+A is the mixing matrix (mapping from sources to electrodes).<br/>
+S(t) is the matrix of independent source signals.<br/>
+ICA solves for A and S(t) iteratively, typically using optimization algorithms such as FastICA. The key assumption is that the source signals are statistically independent from each other.<br/>
+ICA is versatile and can be applied to various EEG signal analysis tasks, such as event-related potential (ERP) analysis, source localization, and feature extraction.
 
 
 
