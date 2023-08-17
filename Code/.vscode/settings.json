@@ -4,6 +4,7 @@
     "python.linting.prospectorEnabled": false,
     "python.linting.pylintEnabled": true,
     "cSpell.words": [
-        "horizontalalignment"
+        "horizontalalignment",
+        "matplotlib"
     ]
 }
