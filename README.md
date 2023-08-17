@@ -32,7 +32,7 @@ CAR is a widely used technique in EEG signal processing to mitigate the effects 
 
 ----
 **Small Laplacian Technique for EEG Signals:**<br/>
-It  is a spatial filtering technique used in EEG signal processing. It aims to enhance spatial resolution by highlighting local changes in EEG signal activity while attenuating more widespread activity. This technique can help improve the detection of localized brain events and reduce the effects of distant sources and common noise.<br/
+It  is a spatial filtering technique used in EEG signal processing. It aims to enhance spatial resolution by highlighting local changes in EEG signal activity while attenuating more widespread activity. This technique can help improve the detection of localized brain events and reduce the effects of distant sources and common noise.<br/>
 Let X be the original EEG signal from electrode i, and $N_{i}$ be the set of neighboring electrodes of electrode i. The Small Laplacian $L_{i}$ for electrode i is calculated as follows:
 $L_{i}=X_{i} - {1 \over | N_{i}|}\sum_{j\epsilon N_{i}}{X_{j}}$<br/>
 **Process:**<br/>
