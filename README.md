@@ -12,7 +12,7 @@ PCA aims to capture the most significant variations in the data by finding the l
 
 **Process:**
   - **Step 1: Data Centering** $\rightarrow$ Subtract the mean of each feature (column) from the data matrix to center it around the origin. $X_{centered}= X- mean(X)$<br/>
-  - **Step 2: Compute the Covariance Matrix** $\rightarrow$ Calculate the covariance matrix of the centered data. If X is the centered data matrix with rows as observations and columns as features, the covariance matrix C is given by: $C=X_{centered}X_{centered}^{T}/(n-1)\rightarrow$ Where n is the number of samples.
+  - **Step 2: Compute the Covariance Matrix** $\rightarrow$ Calculate the covariance matrix of the centered data. If X is the centered data matrix with rows as observations and columns as features, the covariance matrix C is given by: $C={1 \over (n-1)}X_{centered}X_{centered}^{T}\rightarrow$ Where n is the number of samples.
   - **Step 3: Compute Eigenvectors and Eigenvalues** $\rightarrow$ Calculate the eigenvectors and eigenvalues of the covariance matrix. Eigenvectors represent the directions (principal components) in which the data varies the most, and eigenvalues indicate the amount of variance along each eigenvector.
 $C*V_{i}=E_{i}*V_{i}\rightarrow$  E: eigenvalue and V: eigenvector.<br/>
   - **Step 4: Select Principal Components** $\rightarrow$ Sort the eigenvalues in decreasing order. The eigenvectors corresponding to the highest eigenvalues are the principal components that capture the most variance in the data.<br/>
