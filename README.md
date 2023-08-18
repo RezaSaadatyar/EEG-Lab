@@ -31,9 +31,8 @@ CAR is a widely used technique in EEG signal processing to mitigate the effects 
  - **Electrode Artifacts:** CAR might not completely eliminate the effects of electrode artifacts or certain types of noise that are not truly common across all channels.
 
 ----
-**Small Laplacian Technique for EEG Signals:**<br/>
-It  is a spatial filtering technique used in EEG signal processing. It aims to enhance spatial resolution by highlighting local changes in EEG signal activity while attenuating more widespread activity. This technique can help improve the detection of localized brain events and reduce the effects of distant sources and common noise.<br/>
-Let X be the original EEG signal from electrode i, and $N_{i}$ be the set of neighboring electrodes of electrode i. The Small Laplacian $L_{i}$ for electrode i is calculated as follows:<br/>
+**Laplacian Technique for EEG Signals:**<br/>
+It  is a spatial filtering technique used in EEG signal processing. It aims to enhance spatial resolution by highlighting local changes in EEG signal activity while attenuating more widespread activity. This technique can help improve the detection of localized brain events and reduce the effects of distant sources and common noise. The Laplacian $x_{i}$ for electrode i is calculated as follows:<br/>
 $x_{i}(t)=x_{i}(t) - \sum_{j\epsilon N_{i}}w_{ij}{x_{j}}; w_{ij}={1/d_{ij} \over \sum_{j\epsilon N_{i}} 1/d_{ij}}$<br/>
 $x_{i}(t)$ is the potential of the electrode i compare to the reference electrode, $ω_{ij}$ is the constant weight, $d_{ij}$ is the Euclidean distance from electrode i to electrode j. $N_{i}$ is the set of neighborhood electrodes of center electrode i.
 **Process:**<br/>
