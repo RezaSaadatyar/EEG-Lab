@@ -33,8 +33,9 @@ CAR is a widely used technique in EEG signal processing to mitigate the effects 
 ----
 **Small Laplacian Technique for EEG Signals:**<br/>
 It  is a spatial filtering technique used in EEG signal processing. It aims to enhance spatial resolution by highlighting local changes in EEG signal activity while attenuating more widespread activity. This technique can help improve the detection of localized brain events and reduce the effects of distant sources and common noise.<br/>
-Let X be the original EEG signal from electrode i, and $N_{i}$ be the set of neighboring electrodes of electrode i. The Small Laplacian $L_{i}$ for electrode i is calculated as follows:
-$L_{i}=X_{i} - {1 \over | N_{i}|}\sum_{j\epsilon N_{i}}{X_{j}}$<br/>
+Let X be the original EEG signal from electrode i, and $N_{i}$ be the set of neighboring electrodes of electrode i. The Small Laplacian $L_{i}$ for electrode i is calculated as follows:<br/>
+$x_{i}(t)=x_{i}(t) - \sum_{j\epsilon N_{i}}w_{ij}{x_{j}}; w_{ij}={1/d_{ij} \over \sum_{j\epsilon N_{i}} 1/d_{ij}}$<br/>
+$x_{i}(t)$ is the potential of the electrode i compare to the reference electrode, $ω_{ij}$ is the constant weight, $d_{ij}$ is the Euclidean distance from electrode i to electrode j. $N_{i}$ is the set of neighborhood electrodes of center electrode i.
 **Process:**<br/>
   - *Neighborhood Definition:* Determine the set of neighboring electrodes for each electrode. Typically, a set of adjacent electrodes is chosen.
   - *Calculation:* For each electrode, calculate the Small Laplacian by subtracting the average of neighboring electrodes' signals from the signal of interest.
