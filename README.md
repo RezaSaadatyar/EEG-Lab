@@ -20,7 +20,7 @@ $C*V_{i}=E_{i}*V_{i}\rightarrow$  E: eigenvalue and V: eigenvector.<br/>
 
 ----
 **Common Average Reference (CAR)Technique for EEG Signals:**<br/>
-CAR is a widely used technique in EEG signal processing to mitigate the effects of common noise across multiple electrode channels. It aims to improve the quality of EEG data by removing or reducing common sources of noise, such as the placement of electrodes, cable movement, or external electromagnetic interference or muscle activity. CAR $\rightarrow$ *Improving the signal-to-noise ratio of the EEG data.*<br/> $x_{i}(t)=x_{i}(t)-{1 \over C}\sum_{j=1}^{c}x_{j}(t)$<br/>
+CAR is a widely used technique in EEG signal processing to mitigate the effects of common noise across multiple electrode channels. It aims to improve the quality of EEG data by removing or reducing common sources of noise, such as the placement of electrodes, cable movement, or external electromagnetic interference or muscle activity. CAR $\rightarrow$ *Improving the signal-to-noise ratio of the EEG data.*<br/> $x_{i}(t)=x_{i}(t)-{1 \over C}\sum_{j=1}x_{j}(t)$<br/>
 **Process:**<br/>
  - **Step 1: Calculating the Average Signal** $\rightarrow$ Calculate the average signal across all electrodes at each time point. This average represents the common noise present in the recording.
  - **Step 2: Subtracting the Average Signal:**  $\rightarrow$ Subtract the calculated average signal from the individual electrode signals. This helps remove the common noise component.<br/>
