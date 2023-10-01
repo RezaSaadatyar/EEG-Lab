@@ -68,4 +68,5 @@ ICA is versatile and can be applied to various EEG signal analysis tasks, such a
 
 
 
+
 Independent Component Analysis (ICA): ICA is another technique used for artifact removal and source separation. It can be more sophisticated than CAR in terms of extracting independent sources of noise and brain signals.
