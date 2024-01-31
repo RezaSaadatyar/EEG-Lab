@@ -1,6 +1,6 @@
 **EEG Lab**
 
-**Artifacts:**<br / >
+**Artifacts:**<br/>
 ![image](https://github.com/RezaSaadatyar/EEG-Lab/assets/96347878/2359e1a0-2a1a-4b36-b490-88887c781fc0)
 
 ---
