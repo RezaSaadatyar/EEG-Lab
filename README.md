@@ -1,8 +1,7 @@
-![Artifacts](https://github.com/RezaSaadatyar/EEG-Lab/assets/96347878/cf0d04c0-5ab7-43f1-81fb-b54280ab96cb)**EEG Lab**
+**EEG Lab**
 
 **Artifacts:**<br/>
 ![Artifacts](https://github.com/RezaSaadatyar/EEG-Lab/assets/96347878/5b103be3-7a81-4a42-86f5-2a6a5d3fc837)
-
 
 ---
 **Principal Component Analysis (PCA) Technique for EEG Signals:**<Br/>
