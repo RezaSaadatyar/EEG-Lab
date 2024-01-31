@@ -1,5 +1,7 @@
 **EEG Lab**
 
+Artifacts: 
+
 ---
 **Principal Component Analysis (PCA) Technique for EEG Signals:**<Br/>
 PCA aims to capture the most significant variations in the data by finding the linear combinations of the original EEG channels that *maximize variance*. The first principal component explains the most variance, the second explains the second most, and so on.<br/>
@@ -43,15 +45,11 @@ $x_{i}(t)$ is the potential of the electrode i compare to the reference electrod
 
 
 
-**Independent Component Analysis (ICA)**<br/> In EEG signal processing, ICA is applied to disentangle mixed sources, such as muscle activity and eye movements, from the underlying neural signals recorded in EEG data. In fact, ICA decompose these mixed signals into their underlying, statistically independent components, enabling researchers to better understand the distinct sources contributing to the recorded data.<br/>
-ICA process involves estimating both the mixing matrix A and the independent source signals S(t) to maximize the statistical independence of the source signals from the observed EEG signals X(t). X(t)=A⋅S(t), where:<br/>
-X(t): Observed EEG signals matrix with time points as rows and electrode channels as columns.<br/>
-A: Mixing matrix (mapping from sources to electrodes).<br/>
-S(t): Matrix of independent source signals.<br/>
-ICA solves for A and S(t) iteratively, typically using optimization algorithms such as FastICA. The key assumption is that the source signals are statistically independent from each other.<br/>
-ICA is versatile and can be applied to various EEG signal analysis tasks, such as event-related potential (ERP) analysis, source localization, and feature extraction. The underlying assumption is that the sources are not Gaussian and are mutually independent. In cases where the sources exhibit Gaussian distribution or dependence, alternative methods such as Principal Component Analysis (PCA) or Non-negative Matrix Factorization (NMF) may be more suitable
-
-
+**Independent Component Analysis (ICA)**<br/> 
+ICA is a method to recover a version, of the sources by multiplying the data by an unmixing matrix, U = WX,<br/> 
+X is the data (channels x time)<br/> 
+U are the ICA source activities (component x time) W is the ICA unmixing matrix (components x channels)<br/> 
+While PCA simply decorrelates the outputs (using an orthogonal matrix W), ICA attempts to make the outputs statistically independent, while placing no constraints on the matrix W.<br/> 
 
 
 
